@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Motivation RPG - Making you a better person</title>
+	<link rel="stylesheet" type="text/css" href="./style.css"/>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<script type="text/JavaScript" src="/javascript.js"></script>
+	<script type="text/javascript"> 
+		 var seconds=-2081; 
+		 var titleseconds = '';
+		 var intrusiveness=0;
+		 var isplaypage=0;
+		 var numflash=9;
+	</script> 
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-20765429-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+	<script type="text/javascript">
+		document.getElementById('didit').focus();
+	</script>
+</head>
+<body>
+<header class="header" role="banner">
+	<div class="inner">
+		<h1 class="blue-type">Motivation RPG</h1>
+		
+		<ul class="settings">
+			<li><a href="#">djadvance22</a>
+				<ul>
+					<li><a href="#">Settings</a></li>
+					<li><a href='/login.php?action=logout' >Logout</a></li>
+				</ul>
+			</li>
+		</ul>  
+		<div class='selectprofile'> 
+			<form action='/activities_process.php'>
+				<select class="select" name='selectprofile'>
+				  <option value='' selected>Home</option>
+				  <option value='2' >Work</option>
+				</select>
+				<input type='submit' value='Set Profile'>
+			</form>
+		</div>
+	</div><!-- .inner -->
+</header>
+
+<nav class="navigation black" role="navigation">
+	<ul class="inner">
+		<li><a href='/play.php' >Play Now</a></li>
+		<li><a href='/rpg/index.php' >RPG</a></li>
+		<li><a href='/todo.php'>To-Do List</a></li>
+		<li><a href='/progress.php'>Progress</a>	</li>
+		<li><a href='/toplist.php'>Toplist</a></li>
+		<li><a href='/lifetips.php'>Life Tips</a></li>
+		<li><a href='/faq.php'>FAQ</a></li>
+	</ul>
+</nav>
+
+<div class="main inner" role="main">
+	<div class="blue message attack" >
+		<p>A mad mage approaches...</p>
+	</div>
+
+	<aside class="sidebar">
+		<h1>Level</h1>
+		<div id="level-box" class="section">
+			<div id="level" class="blue"><h2>1</h2></div>
+			<div id="xpbar" class="dblue"></div>
+			<div id="xp" class="blue"></div>
+			<p id="xpinfo"><span id="xpinfo-have">XP 19</span>
+				<span id="xpinfo-left">Xp to Level 181</span></p>
+		</div>
+		
+		<h1>Stats</h1>
+		<div class="section">
+		<table class="stattable lefttable">
+			<tr><td>Fitness</td><td class="statnum">3</td></tr>
+			<tr><td>Health</td><td class="statnum">1</td></tr>
+			<tr><td>Intelligence</td><td class="statnum">3</td></tr>
+		</table>
+		<table class='stattable righttable'>
+			<tr><td>Voice</td><td class="statnum">2 </td></tr>
+			<tr><td>Mood</td><td class="statnum">3 </td></tr>
+			<tr><td>Posture</td><td class="statnum">2 </td></tr>
+		</table>
+		</div>
+		
+		<h1>Character Info</h1>
+		<table class='stattable section'>
+			<tr><th>Race</th><td class="statnum">Goblin</td></tr>
+			<tr><th>Weapon</th><td class="statnum">knee</td></tr>
+			<tr><th>Armor</th><td class="statnum">skin</td></tr>
+			<tr><th>Coins</th><td class="statnum">41</td></tr>
+		</table>
+	</aside><!-- end .sidebar -->
+
+	<div class="content">	
+		<div class="missionbox">
+			<h1 class="black">Posture: Arm and leg raise</h1>	
+			
+			<div class="container gray">
+				<div class="section white lgray-type">
+					<div class="column-big">
+						<h2>Instructions</h2>
+						<p>Kneel on your hands and knees in the crawling position.</p>
+						<p>Slowly lift one arm and the opposite leg until they are stretched straight out. <br /></p>
+						<p>Bring them back down, and repeat with the other arm and leg.</p>
+						<p><a href="http://www.youtube.com/watch?v=5LSqnhQL-dA" target="_blank">Demonstration</a></p>
+					</div>
+					<div class="column-small">
+						<h2>Earn</h2>
+						<p><span style="color:#E86D45;"> +1 XP</span></p>
+						<p><span style="color:#E86D45;"> +1 Posture</span></p>
+						
+						<form class="" action='play_process.php' method='post'>
+							<h2>Be honest</h2>
+							<input class="graybtn" type="submit" name='verdict' value='Didn&apos;t Do It'>
+							<input class="graybtn" type='submit' name='verdict' value="Switch">
+							<input class="bigbtn" id='didit' type="submit" name='verdict' value='Did it!'>
+						</form>
+					</div>
+				</div>
+			</div><!-- .container -->
+		</div><!-- #missionbox -->
+	</div><!-- end #content -->
+</div><!-- end #main -->
+
+<footer class="footer black">
+	<a href='http://www.facebook.com/pages/Motivation-RPG/164569546923038'>Facebook</a>
+	<a href='/suggestions.php'>Feedback</a>
+</footer>
+
+</body>
+</html>
